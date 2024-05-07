@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="psycho" href="css/style.css">
+    <title>Адаптивный дизайн</title>
+    <style>
+         
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            h1 {
+                font-size: 36px;
+            }
+            .psyho-window {
+                width: 300px;
+                height: 200px;
+                background-color: #f0f0f0;
+                border: 2px solid #ccc;
+                margin: 20px auto;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            h1 {
+                font-size: 24px;
+            }
+            .psyho-window {
+                width: 250px;
+                height: 150px;
+                margin: 10px auto;
+            }
+        }
+
+        
+        @media only screen and (max-width: 767px) {
+            
+            h1 {
+                font-size: 18px;
+            }
+            .psyho-window {
+                width: 200px;
+                height: 100px;
+                margin: 5px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Пример адаптивного дизайна</h1>
+    <div class="psyho-window">
+        <p><align="center">Фильм</p>
+        <p><align="center">The American Psycho</p>
+    </div>
+    <p>В котором снимался Кристиан Бейл.</p>
+</body>
+</html>
